@@ -8,11 +8,11 @@ class LetterCounter {
   public static void main (String[] args) {
     int LetterCount = 0;
     String check_word = args[0];
-    String single_letter = "";
+    String single_letter;
     int i;
     for (i = 0; i< check_word.length(); i++) {
-      single_letter = check_word.substring(1, 1);
-      if (single_letter.equals("g")) {
+      single_letter = check_word.substring(i, i+1);
+      if (single_letter.equalsIgnoreCase("g")) {
         LetterCount++;
       }
     }

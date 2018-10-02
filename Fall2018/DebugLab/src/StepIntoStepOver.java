@@ -15,7 +15,7 @@ public class StepIntoStepOver
     countdown2(n);
   }
 
-  public static int countdown(int num)
+  private static int countdown(int num)
   {
     while(num >= 0)
     {
@@ -25,12 +25,11 @@ public class StepIntoStepOver
     return 0;
   }
 
-  public static int countdown2(int number)
+  private static int countdown2(int number)
   {
-    for(int i = number; i <= number; i--)
+    for(int i = number; i >=0; i--)
     {
-      System.out.println(number);
-      number--;
+      System.out.println(i);
     }
     return 0;
   }
