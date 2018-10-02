@@ -7,7 +7,7 @@
 public class SetValue {
   public static void main(String[] args) {
 
-    String invalid = "turnip";
+    String invalid = "12";
     // This causes a NumberFormatException.
     int result = Integer.parseInt(invalid);
     System.out.println("The number is: " + result);
